@@ -25,11 +25,12 @@ function getSongsBySaib(songs) {
  * @returns {Object[]} An array of objects.
  */
 function getSongsOverThreeMinutes(songs) {
-  let longSongs = exampleSongData.filter((song) =>{
-    if(song.runtimeInSeconds > 180) return song  })
-
-//return longSongs
+  let longSongs = exampleSongData.filter((song) => song.runtimeInSeconds > 180)
+  return longSongs
 }
+
+
+
 /**
  * Returns an array of songs where the song title is the same as the song album.
  * @param {Object[]} songs - An array of songs. See the song data for more.
