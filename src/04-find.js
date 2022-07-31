@@ -7,14 +7,12 @@
 */
 const exampleSongData = require("../data/songs");
 // Do not change the line above.
-//const found = array1.find(element => element > 10);
 /**
  * Returns the song "Pink Elephants" from the song array, if it is in the array.
  * @param {Object[]} songs - An array of songs. See the song data for more.
  * @returns {Object} A single object.
  */
 function findPinkElephantsByTimestreet(songs) {
-  //const found = array1.find(element => element > 10);
   return exampleSongData.find(({title}) => title === "Pink Elephants")
 }
 
@@ -40,7 +38,6 @@ function findFirstTitleTrack(songs) {
   return exampleSongData.find((song) => {
     let obj = song
     if(obj.title === obj.album) return obj.title
-
   })
 
   }
