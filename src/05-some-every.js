@@ -33,7 +33,6 @@ function anySongIsOverFourMinutes(songs) {
  * @returns {boolean}
  */
 function anySongIsByPeanut(songs) {
-
   return exampleSongData.some(({artist}) => artist === "Peanut")
 }
 
